@@ -297,7 +297,7 @@ tr td:last-child{
 .feedback{
     width: 80%;
     margin: auto;
-    padding-top: 100px;
+    padding-top: 50px;
     text-align: center;
 }
 .review{
@@ -309,6 +309,7 @@ tr td:last-child{
     padding: 25px;
     cursor: pointer;
     display: flex;
+    
 }
 .review img{
     height: 40px;
