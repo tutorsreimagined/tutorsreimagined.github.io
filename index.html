@@ -11,31 +11,39 @@
     <script src="https://kit.fontawesome.com/f82c77e001.js" crossorigin="anonymous"></script>
  </head>
 <body>
-    <section class= "header">
-        <nav>
+    <section class= "begin" id = "start">
+        <header>
             <a href = "index.html"><img src = "images/logo.png"></a>
             <div class = "nav-links" id = "navLinks">
                 <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
                 <ul>
-                    <li><a href = "">HOME</a></li>
-                    <li><a href = "">ABOUT US</a></li>
-                    <li><a href = "">MEET THE TEAM</a></li>
-                    <li><a href = "">QUESTIONS?</a></li>
+                    <li><a href = "#start">HOME</a></li>
+                    <li><a href = "#course">COURSES</a></li>
+                    <li><a href = "#competition">COMPETITIONS</a></li>
+                    <li><a href = "#contact">CONTACT US</a></li>
                 </ul>
             </div>
             <i class="fa-solid fa-bars" onclick="showMenu()"></i>
-
-        </nav>
+            
+        </header>
+        <section class = "banner"></section>
     <div class = "text-box">
         <h1> Tutors Reimagined </h1>
         <p> We are a non-profit tutoring organization dedicated to helping high school students excel in mathematics and science. Our focus includes both standard curriculum support and preparation for competitive exams. We provide expert guidance and personalized tutoring to ensure students achieve their academic goals and succeed in math and science competitions.</p>
         <a href = "" class = "hero-btn">Learn More</a>
     </div>
+    <script type = "text/javascript">
+        window.addEventListener("scroll", function(){
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
+    </script>
     </section>
     
     
+    
 <!-------Course------->
-  
+<br id = 'course'> 
 <section class = "course">
     <h1>Subjects We Offer</h1>
     <p>Other subjects could be taught based on student request!</p>
@@ -57,7 +65,10 @@
     
     
 <!---------Competitions-------->
-<section class="competitions">
+<br id = "competition">
+<br>
+<br>
+<section class="competitions" >
     <h1> Competition Prep </h1>
     <p>Below are just some of the competitions we provide preparations for, but if you need assistance with something else we do have specialized tutors to help you out.</p>
     
@@ -117,6 +128,8 @@
     
 
 <!--------Contact Us-------->
+<br id = "contact">
+<br>
 <section class = "contact">
     <div class = "container">
         <br>
