@@ -359,7 +359,123 @@ tr td:last-child{
         margin-right: 30px;
     }
 }
-
+.team{
+    background: #a1abff;
+    min-height: 100vh;
+}
+.title{
+    text-align: center;
+}
+.title h1{
+    display: inline-block;
+    padding: 20px;
+}
+.wrapper-row{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10px;
+}
+.wrapper{
+    flex-basis: 23%;
+}
+.wrapper .name h3{
+    font-weight: 500;
+    font-size: 24px;
+}
+.wrapper .cardContainer{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px 0;
+}
+.cardContainer .card{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    overflow: hidden;
+    box-shadow: 0 30px 30px -20px rgba(0,0,0,1),
+                inset 0 0 0 1000px rgba(67,52,109,0.6);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card .imgBox, .imgBox img{
+    width: 100%;
+    height: 100%;
+}
+.card .content{
+    position: absolute;
+    bottom: -160px;
+    width: 100%;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 15px;
+    transition: bottom 0.5s;
+    transition-delay: 0.65s;
+    
+}
+.card:hover .content{
+    bottom: 0;
+    transition-delay: 0s;
+}
+.content .contBox h3{
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    margin: 20px 0 15px;
+    line-height: 1.1em;
+    transition: 0.5s;
+    transition-delay: 0.6s;
+    opacity: 0;
+    transform: translateY(-20px);
+}
+.card:hover .content .contBox h3{
+    opacity: 1;
+    transform: translateY(0);
+}
+.content .contBox h3 span{
+    font-size: 13px;
+    font-weight: 300;
+    text-transform: initial;
+    
+}
+.content .sci{
+    position: relative;
+    bottom: 5px;
+    display: flex;
+}
+.content .sci li{
+    list-style: none;
+    margin: 0 10px;
+    transform: translateY(40px);
+    transition: 0.5s;
+    opacity: 0;
+    transition-delay: calc(0.2s * var(--i))
+}
+.card:hover .content .sci li{
+    transform: translateY(0);
+    opacity: 1;
+}
+.content .sci li a{
+    color: #fff;
+    font-size: 24px;
+}
 /*
 ih1{
     font-size: 36px;
